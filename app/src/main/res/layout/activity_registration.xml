@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Levender"
+            app:layout_constraintTop_toTopOf="parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo"
+                app:civ_border_color="#ECE4E4"
+                app:civ_border_width="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:text="Student Registration Form" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/Levender"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt1"
+            android:textSize="15sp"
+
+            android:text="Here's Your first Step with Us!"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepic2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar2"
+            android:layout_marginRight="20dp"
+            app:civ_border_color="@color/Levender"
+            app:civ_border_width="4dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/card1"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintTop_toBottomOf="@id/txt1"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stdnametxt"
+                    android:text="Student Name"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/Levender"
+                    />
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:hint="Student_Name"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/stroke"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stdnametxt" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stdemailtxt"
+                    android:text="Student Email"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/edt_name"
+                    android:textColor="@color/Levender"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Email"
+                    android:id="@+id/edt_email"
+                    android:textSize="12sp"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/stroke"
+                    app:layout_constraintTop_toBottomOf="@id/stdemailtxt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stdphonetxt"
+                    android:textSize="12sp"
+                    android:text="Student Phone No"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/edt_email"
+                    android:textColor="@color/Levender"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="PhoneNo"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/stroke"
+                    android:textSize="12sp"
+                    android:id="@+id/edt_phoneno"
+                    app:layout_constraintTop_toBottomOf="@id/stdphonetxt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stddobtxt"
+                    android:textSize="12sp"
+                    android:text="Student Date of Birth"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/edt_phoneno"
+                    android:textColor="@color/Levender"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="dd/mm/yyyy"
+                    android:id="@+id/edt_dob"
+                    app:layout_constraintTop_toBottomOf="@id/stddobtxt"
+                    android:layout_marginLeft="20dp"
+                    android:paddingStart="10dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/stroke"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stdpasstxt"
+                    android:text="Password"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/edt_dob"
+                    android:textColor="@color/Levender"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Password"
+                    android:id="@+id/edt_password"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/stroke"
+                    app:layout_constraintTop_toBottomOf="@id/stdpasstxt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    />
+
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stdcnpasstxt"
+                    android:text="Conform Password"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/edt_password"
+                    android:textColor="@color/Levender"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Conform Password"
+                    android:id="@+id/edt_cnpassword"
+                    app:layout_constraintTop_toBottomOf="@id/stdcnpasstxt"
+                    android:layout_marginLeft="20dp"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/stroke"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stdgendertxt"
+                    android:text="Select Gender"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/edt_cnpassword"
+                    android:textColor="@color/Levender"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stdgendertxt"
+                    android:id="@+id/genderradiogroup">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="male"
+                        android:textSize="12sp"
+                        android:id="@+id/maleradiobtn"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="female"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/femaleradiobtn"/>
+
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/genderradiogroup"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/btnSignin"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account!"
+            android:id="@+id/logintxt"
+            android:textColor="@color/Levender"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/btnSignin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@id/logintxt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

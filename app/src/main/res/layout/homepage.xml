@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Levender"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/drawaricon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_menu_24"
+            android:background="@color/transparent"
+            app:civ_border_width="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="Thal University Event Managment App" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintTop_toBottomOf="@id/tool">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/WelcomeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+
+                    android:hint="Loading...."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/WelcomeName"
+                    android:layout_marginStart="20dp"
+                    android:text="Popular Events "
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    android:scaleType="fitXY"
+
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/txt"
+                    android:elevation="10dp"
+                    android:id="@+id/card2">
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPagerMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:layout_below="@id/txt"/>
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore Categories"
+                    android:id="@+id/txtexplore"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@id/card2"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_below="@id/txtexplore">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l1"
+                        android:orientation="horizontal"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/catogery1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:src="@drawable/lunch"
+                            app:civ_border_color="#ECE4E4"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            app:civ_border_width="4dp" />
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/catogery3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/poetic"
+                            app:civ_border_color="#ECE4E4"
+                            app:civ_border_width="4dp" />
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/catogery4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/logo"
+                            app:civ_border_color="#ECE4E4"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="60dp"
+                            app:civ_border_width="4dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l1"
+                        android:id="@+id/l2"
+                        android:layout_marginTop="69dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Annual Function"
+                            android:textSize="10sp"
+                            android:layout_marginStart="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Symposium"
+                            android:textSize="10sp"
+                            android:layout_marginStart="50dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flower Exibition"
+                            android:textSize="10sp"
+                            android:layout_marginStart="60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="95dp"
+                        android:id="@+id/l3"
+                        android:orientation="horizontal"
+
+                        >
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/catogery5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/sport"
+                            app:civ_border_color="#ECE4E4"
+                            android:layout_marginStart="20dp"
+                            app:civ_border_width="4dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="170dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sport Gala"
+                            android:textSize="10sp"
+                            android:layout_marginStart="20dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Events"
+                    android:layout_below="@id/card3"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/textrecent"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventlist2"
+                    android:layout_below="@id/textrecent"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemBackground="@color/Levender"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

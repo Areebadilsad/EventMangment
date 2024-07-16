@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EventMangment</string>
+    <string name="txt">Please enter your registered
+        email to receive password reset link</string>
+    <string name="open_nav">Open NavBar</string>
+    <string name="close_nav">Close NavBar</string>
+</resources>

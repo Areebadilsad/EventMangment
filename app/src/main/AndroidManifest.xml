@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventMangment"
+        tools:targetApi="31">
+        <activity
+            android:name=".splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SportGala"
+            android:exported="false" />
+        <activity
+            android:name=".FlowerExibition"
+            android:exported="false" />
+        <activity
+            android:name=".Symposium"
+            android:exported="false" />
+        <activity
+            android:name=".AnnualFunction"
+            android:exported="false" />
+        <activity
+
+            android:name=".updatepassword"
+            android:exported="false" />
+        <activity
+            android:name=".updateemail"
+            android:exported="false" />
+        <activity
+            android:name=".updateprofileactivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadProfilePucture"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+
+        <activity
+            android:name=".PaymentAcrivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_single_event"
+            android:exported="false" />
+        <activity
+            android:name=".StudentEventPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".LoginForm"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_ILgsfZCZoFIKMb" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>
